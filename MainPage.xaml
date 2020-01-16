@@ -9,26 +9,38 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     d:DesignWidth="600"
     d:DesignHeight="400">
-    
+
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
-        <Grid>
-            <StackPanel Background="#89cff0" Orientation="Horizontal" >
-                <Image Source="Images/logo.png" Height="90" Margin="50 0 0 0"/>
-                
-            </StackPanel>
-            <TextBlock Text="Cat A Fact" 
-                       FontWeight="ExtraBold" 
-                       FontSize="40"
-                       Foreground="White"
-                       TextAlignment="Center"
-                       VerticalAlignment="Bottom"
-                       Margin="20"/>
+        <Grid Grid.ColumnSpan="2" Background="#89cff0">
+            <Image Source="Images/logo.png" 
+                   HorizontalAlignment="Left"
+                   Height="90"
+                   Margin="50 0 0 0" />
+            <TextBlock 
+                Text="Pet a Shop"
+                FontSize="30"
+                FontWeight="ExtraBold" 
+                Foreground="White"
+                Margin="20"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"/>
         </Grid>
         
+        <Grid Grid.Row="1" Grid.Column="2" Background="White" BorderThickness="10" BorderBrush="#89cff0">
+            <TextBlock  
+                Text="Lorim ipsumLorim"
+                Foreground="Black"
+                />
+        </Grid>
     </Grid>
 </Page>
