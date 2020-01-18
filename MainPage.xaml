@@ -13,34 +13,49 @@
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="auto"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="560"/>
+            <ColumnDefinition Width="20"/>
+
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.ColumnSpan="2" Background="#89cff0">
-            <Image Source="Images/logo.png" 
-                   HorizontalAlignment="Left"
-                   Height="90"
-                   Margin="50 0 0 0" />
-            <TextBlock 
+        <Grid Grid.Row="1" Grid.Column="2" Background="Red">
+            <Image 
+                Source="Images/logo.png"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="20 0 0 0"
+                MaxHeight="100"/>
+
+            <TextBlock
                 Text="Pet a Shop"
                 FontSize="30"
                 FontWeight="ExtraBold" 
-                Foreground="White"
-                Margin="20"
+                Margin="200 0 200 25"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"/>
         </Grid>
-        
-        <Grid Grid.Row="1" Grid.Column="2" Background="White" BorderThickness="10" BorderBrush="#89cff0">
-            <TextBlock  
-                Text="Lorim ipsumLorim"
-                Foreground="Black"
-                />
-        </Grid>
+
+
+        <Image Grid.Row="2" Grid.Column="2" Source="Images/logo.png"
+                   Height="200"
+                   Width="500"
+                   Margin="0 0 0 0"/>
+
+        <TextBlock Grid.Row="3"  Grid.Column="2" 
+                Margin="0 0 0 0"
+                TextWrapping="Wrap"
+                Text="HejLorim ipsumLorimipsumLorimipsumLorimipsumLorimipsumLorimipsumLorim"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"/>
+
     </Grid>
 </Page>
