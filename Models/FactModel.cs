@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CatCall.Models
+namespace CatApp.Models
 {
     public class FactModel
     {

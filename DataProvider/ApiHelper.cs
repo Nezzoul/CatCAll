@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CatCall.DataProvider
+namespace CatApp.DataProvider
 {
     public static class ApiHelper
     {

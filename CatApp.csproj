@@ -124,8 +124,10 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\FactModel.cs" />
+    <Compile Include="Models\ImgModel.cs" />
     <Compile Include="Models\Status.cs" />
     <Compile Include="Processor\CatProcessor.cs" />
+    <Compile Include="Processor\ImgProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

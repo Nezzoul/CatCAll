@@ -1,5 +1,5 @@
-﻿using CatCall.DataProvider;
-using CatCall.Models;
+﻿using CatApp.DataProvider;
+using CatApp.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CatCall.Processor
+namespace CatApp.Processor
 {
     public class CatProcessor
     {

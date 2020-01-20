@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace CatApp.Models
 {
-    public class Status
+   public class ImgModel
     {
-        public bool Verified { get; set; }
-        public int SetCount { get; set; }
+        public string Img { get; set; }
     }
 }
