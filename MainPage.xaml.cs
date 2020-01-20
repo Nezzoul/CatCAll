@@ -34,7 +34,7 @@ namespace CatCAll
         private async void ButtonGetCatfact_Click(object sender, RoutedEventArgs e)
         {
             var result = await CatProcessor.LoadFact();
-            //Result.Text = result.Text;
+            Result.Text = result.Text;
             // Result and Text needs to refer to names in the xaml
         }
     }
