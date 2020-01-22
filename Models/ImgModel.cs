@@ -8,6 +8,6 @@ namespace CatApp.Models
 {
    public class ImgModel
     {
-        public string Img { get; set; }
+        public string file { get; set; }
     }
 }

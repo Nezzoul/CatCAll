@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CatApp.Processor
 {
-    class ImgProcessor
+    public class ImgProcessor
     {
         public static async Task<ImgModel> LoadImg()
         {
@@ -24,8 +24,8 @@ namespace CatApp.Processor
                 {
                     throw new Exception(response.ReasonPhrase);
                 }
-                return fact;
             }
+            return fact;
         }
     }
 }

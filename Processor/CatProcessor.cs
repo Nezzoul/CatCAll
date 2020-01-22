@@ -2,10 +2,7 @@
 using CatApp.Models;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CatApp.Processor
@@ -20,8 +17,7 @@ namespace CatApp.Processor
             {
                 if (response.IsSuccessStatusCode)
                 {
-                    // FactModel facts = await response.Content.ReadAsAsync<FactModel>();
-                    var result = await response.Content.ReadAsStringAsync(); 
+                    var result = await response.Content.ReadAsStringAsync();
                     fact = JsonConvert.DeserializeObject<FactModel>(result);
                 }
                 else

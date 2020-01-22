@@ -2,21 +2,20 @@
     x:Class="CatApp.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:CatApp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     d:DesignWidth="600"
-    d:DesignHeight="400">
+    d:DesignHeight="550">
 
 
     <Grid Background="#89cff0">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="100"/>
+            <RowDefinition Height="300"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
@@ -37,7 +36,7 @@
                 MaxHeight="100"/>
 
             <TextBlock
-                Text="Pet a Shop"
+                Text="Cat Facts"
                 FontSize="30"
                 FontWeight="ExtraBold" 
                 Margin="200 0 200 25"
@@ -46,21 +45,22 @@
         </Grid>
 
         <StackPanel Grid.Row="2" Grid.Column="2" Background="White" BorderBrush="#89cff0" BorderThickness="0 0 0 20">
-            <Image Source="Images/logo.png"
-                   Height="160"
-                   Width="500"
-                   Margin="0 5 0 5"/>
+            <Image Name="GetImage"
+                   Height="280"
+                   Stretch="Fill"
+                   Margin="0 0 0 0"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="3"  Grid.Column="2" Background="white">
+        <StackPanel Grid.Row="3"  Grid.Column="2" Background="White">
             <TextBlock 
                    Name="Result"
                    Text="Facts"
+                   Height="80"
                    Margin="2 0 2 0"
                    Width="500"
                    TextWrapping="Wrap"
                    HorizontalAlignment="Center"
-                   VerticalAlignment="Top"/>
+                   VerticalAlignment="Bottom"/>
         </StackPanel>
 
         <StackPanel Grid.Row="4" Grid.Column="2" Orientation="Horizontal" Background="#89cff0">
@@ -68,6 +68,9 @@
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Symbol="Find"/>
                 </StackPanel>
+            </Button>
+            <Button Click="ButtonGetCatImg_Click">
+
             </Button>
         </StackPanel>
     </Grid>
